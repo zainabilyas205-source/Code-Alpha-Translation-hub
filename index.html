@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>🔮CodeAlpha Translation Hub</title>
+    <link rel="stylesheet" href="/static/style.css"/>
+</head>
+<body>
+
+<div id="header">
+    <button id="menu-btn">☰</button>
+    <h1>🔮CODEALPHA TRANSLATION HUB</h1>
+</div>
+
+<div id="layout">
+
+    <div id="sidebar" class="closed">
+        <div class="sb-head">
+            <div class="sb-head-title">🕒 History</div>
+            <button id="clear-history-btn">Clear History</button>
+        </div>
+        <div id="history-list">
+            <div class="hist-empty" id="hist-empty">No history yet.<br/>Translate something!</div>
+        </div>
+    </div>
+
+    <div id="main">
+        <div id="main-scroll">
+
+            <div id="lang-row">
+                <div class="lang-group">
+                    <span class="lang-label">🌍 From</span>
+                    <select id="src-lang"></select>
+                </div>
+                <button id="swap-btn" title="Swap languages">⇄</button>
+                <div class="lang-group">
+                    <span class="lang-label">🎯 To</span>
+                    <select id="tgt-lang"></select>
+                </div>
+            </div>
+
+            <div class="text-row">
+                <div class="text-panel">
+                    <span class="panel-label">⌨️ Input Text</span>
+                    <textarea id="input-text"
+                        placeholder="Type text here or use voice input below..."
+                        maxlength="2000"></textarea>
+                </div>
+                <div class="text-panel">
+                    <span class="panel-label">✨ Translation</span>
+                    <textarea id="output-text"
+                        placeholder="Translation will appear here..."
+                        readonly></textarea>
+                </div>
+            </div>
+            <div id="char-count">0 / 2000</div>
+
+            <div class="voice-row">
+                <div class="voice-panel">
+                    <div class="voice-panel-header">
+                        <span class="voice-panel-title">🎤 Voice Input</span>
+                    </div>
+                    <div class="voice-panel-body">
+                        <button id="rec-btn">
+                            <span class="rec-dot"></span>
+                            <span id="rec-label">Record</span>
+                        </button>
+                        <span id="rec-status">Click to speak</span>
+                    </div>
+                </div>
+
+                <div class="voice-panel">
+                    <div class="voice-panel-header">
+                        <span class="voice-panel-title">🔊 Voice Output</span>
+                    </div>
+                    <div class="voice-panel-body">
+                        <button id="play-btn" disabled>
+                            <span class="play-icon" id="play-icon">▶</span>
+                            <span id="play-label">Play</span>
+                        </button>
+                        <span id="play-status">Translate first</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="action-row">
+            <button id="translate-btn">⚡ TRANSLATE &amp; SPEAK</button>
+            <button id="reset-btn">❌ RESET</button>
+        </div>
+    </div>
+
+</div>
+
+<div id="toast"></div>
+<script src="/static/script.js"></script>
+</body>
+</html>
