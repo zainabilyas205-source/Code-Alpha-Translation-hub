@@ -96,7 +96,7 @@ Arabic • Bengali • Chinese (Simplified) • Dutch • English • Farsi • 
 
 **Your Name**
 - GitHub: [https://github.com/zainabilyas205-source/Code-Alpha-Translation-hub]
-- LinkedIn: [https://www.linkedin.com/in/zainab-ilyas-559109349/]
+- LinkedIn: [https://www.linkedin.com/feed/update/urn:li:activity:7452395781858222080/]
 
 ---
 
