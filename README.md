@@ -86,12 +86,6 @@ Arabic • Bengali • Chinese (Simplified) • Dutch • English • Farsi • 
 
 ---
 
-## 📸 Screenshots
-
-> Add screenshots of your app here
-
----
-
 ## 👩‍💻 Author
 
 **Your Name**
